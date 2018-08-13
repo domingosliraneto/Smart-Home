@@ -1,0 +1,14 @@
+node_modules
+node_modules/*
+.sourcemaps
+.sourcemaps/*
+.vscode
+.vscode/*
+typings
+typings/*
+www
+www/*
+platforms
+platforms/*
+plugins
+plugins/*

@@ -1,0 +1,28 @@
+<ion-content padding>
+
+  <ion-list>
+    <button ion-item menuToggle>
+      <ion-icon name="ios-list-box-outline" item-start></ion-icon>
+    </button>
+  </ion-list>
+  <div align="center">
+    <br>
+    <h3> Olá <strong class="textcolor-preto">Domingos</strong>, obrigado por confiar na Energy Saver,
+    para continuar com a avaliação, basta seguir o passo a passo demostrado nos slides.
+    </h3>
+  </div>
+  <ion-card *ngFor="let camera of cameras">
+    <ion-card-header>
+      {{camera.title}}
+    </ion-card-header>
+    <ion-card-content> 
+     <iframe width="200" height="200" [src]="camera.camera | camera" frameborder="0" allowfullscreen align="right"></iframe>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-fab bottom right>
+  <button ion-fab color='primary' (click)="goToCamera()" color="dark">
+    <ion-icon name='add'></ion-icon>
+  </button>
+</ion-fab>

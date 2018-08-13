@@ -1,0 +1,34 @@
+<ion-content overflow-scroll="false">
+  <ion-slides padding pager>
+    <ion-slide>
+      <div class="diag" style="background: url('assets/img/whitebg.svg') no-repeat">
+        <ion-icon ios="ios-analytics" md="md-analytics" color="primary"></ion-icon>
+      </div>
+      <div>
+        <h2>Pagina uno de prueba</h2>
+        <p>Con esta aplicación seras el mejor!.</p>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="diag" style="background: url('assets/img/whitebg.svg') no-repeat">
+        <ion-icon ios="ios-trophy" md="md-trophy" color="primary"></ion-icon>
+      </div>
+      <div>
+        <h2>Pagina dos de prueba</h2>
+        <p>Segunda pagina de prueba, sigue adelante para llegar a la siguiente pagina.</p>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="diag" style="background: url('assets/img/whitebg.svg') no-repeat">
+        <ion-icon ios="ios-chatboxes" md="md-chatboxes" color="primary"></ion-icon>
+      </div>
+      <div>
+        <h2>Pagina tres de prueba</h2>
+        <p>Llegaste al final, genial ahora podras seguir a la app principal.</p>
+      </div>
+    </ion-slide>
+  </ion-slides>
+  <button (click)="skip()" id="skip">{{ skipMsg }}</button>
+</ion-content>

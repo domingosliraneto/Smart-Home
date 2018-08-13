@@ -1,0 +1,36 @@
+<ion-content padding>
+  <ion-card>
+    <ion-card-content>
+      Olá fulano, avaliamos suas contas e o resultado é bem pertinenm, os graficos abaixo demostram o quanto você irar economizar
+      e quanto de demanda deverar contrar, caso queira gerar seu novo contrato com a demanda apresentada basta clicar no botão abaixo.
+      <button ion-button color="secondary" (click)="goToGerarPDF()" round>Baixar PDF</button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Bar Chart
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #barCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Doughnut Chart
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #doughnutCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Line Chart
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #lineCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

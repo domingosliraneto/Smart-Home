@@ -1,0 +1,30 @@
+<ion-content padding>
+  <div style="width:100%;text-align: center;align-content: center;align-self: center;">
+    <img width="80" height="80" class="myphoto" src="assets/img/logo/logo-pr.png" /> 
+    <strong class="textcolor-preto"><h1>Domingos</h1></strong>
+    <br>
+  </div>
+  <ion-card>
+    <ion-card-header>
+      <ion-list>
+        <button ion-item menuToggle>
+          <ion-icon name="ios-options-outline" item-start></ion-icon>
+        </button>
+      </ion-list>
+    </ion-card-header>
+    <ion-card-content>
+       Olá, <strong class="textcolor-preto">Domingos</strong>, este é o monitor em real time da sua residência, fique atento aos 
+       <strong class="textcolor-verde">Gráficos</strong> e <strong class="textcolor-verde">Status</strong> de cada dispositivoconectado.
+          <br>
+          <br>
+       <canvas #lineCanvas></canvas>
+    </ion-card-content>
+    <ion-list>
+      <button ion-item class="gb-color" (click)="goToAvaliar()">
+        <ion-icon name="ios-videocam-outline" item-start></ion-icon>
+          <p style="white-space: pre-line">Quer moniturar sua casa utilizando cameras? Clique aqui e saiba mais!</p>
+        <!-- <ion-icon name="ios-arrow-forward-outline" item-right></ion-icon> -->
+      </button>
+    </ion-list>
+  </ion-card>
+</ion-content>

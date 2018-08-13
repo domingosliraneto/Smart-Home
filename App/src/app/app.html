@@ -1,0 +1,38 @@
+<ion-menu [content]="content">
+<ion-content>
+  <br>
+  <br>
+  <div>
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="assets/img/perf.jpg"/>
+      </ion-avatar>
+      Domingos Neto
+    </ion-item>
+  </div>
+
+  <br><br>
+  <ion-card-content>
+    Olá <strong class="textcolor-preto">Domingos</strong>, controle todos os terminais da sua casa com apenas um clique.
+  </ion-card-content>
+  <br><br>
+  <ion-item>
+    <ion-label> <ion-icon md="ios-speedometer-outline"></ion-icon> Irrigação Jardim </ion-label>
+    <ion-toggle [(ngModel)]="BJardim" (ionChange)="pushFireBJardim()" checked="false" color="secondary"></ion-toggle>
+  </ion-item>
+  <ion-item>
+    <ion-label> <ion-icon md="ios-leaf-outline"></ion-icon> Lampadas Jardim </ion-label>
+    <ion-toggle [(ngModel)]="LJardim" (ionChange)="pushFireLJardim()" checked="false" color="secondary"></ion-toggle>
+  </ion-item>
+  <ion-item>
+    <ion-label> <ion-icon md="ios-home-outline"></ion-icon> Lampadas Área </ion-label>
+    <ion-toggle [(ngModel)]="LArea" (ionChange)="pushFireLArea()" checked="false" color="secondary"></ion-toggle>
+  </ion-item>
+  <ion-item>
+    <ion-label> <ion-icon md="ios-boat-outline"></ion-icon> Lampadas Piscina </ion-label>
+    <ion-toggle [(ngModel)]="LPiscina" (ionChange)="pushFireLPiscina()" checked="false" color="secondary"></ion-toggle>
+  </ion-item>
+</ion-content>
+
+</ion-menu>
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
